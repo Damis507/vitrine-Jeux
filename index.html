@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="asset/img/déclinaison 3.png" alt="Inventor race logo" width="3%">
+        <a class="jeu" href="">
+            <p class="konkhmer-sleokchher-regular">Jouer maintenant</p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+        </a>
+    </nav>
+
+    <button id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    
+    <div class="slider-container">
+        <div class="slider">
+            <section class="slide">
+                <img class="decor1" src="asset/img/Forme2.png" alt="">
+                <img class="gameScreen" src="asset/img/circuit1.png" alt="">
+                <div class="cont1">
+                    <a href=""><img src="asset/img/image 3.png" alt="Jouer_à_inventor_race"></a>  
+                    <p class="konkhmer-sleokchher-regular">Un<span class="bleu"> jeu de cartes</span> où les joueurs <br> risquent gros pour gagner gros.</p>
+                    <a href=""><img src="asset/img/play_button.png" alt="Jouer_à_inventor_race"></a>
+                </div>
+            </section>
+
+
+            <section class="slide">
+                <img class="decor2" src="asset/img/Forme1.png" alt="">
+                <div class="cont2">
+                    <img src="asset/img/Group 22.png" alt="" width="100%" >
+                </div>
+
+            </section>
+         </div>
+        <div class="dots">
+            <button class="dot active" onclick="goToSlide(0)"></button>
+            <button class="dot" onclick="goToSlide(1)"></button>
+        </div>
+    </div>
+
+    <div class="section2">
+        <img class="gearback2" src="asset/img/crop_gear_blue.png" alt="">
+
+        <div class="gauche">
+            <div class="text1">
+                <h1 class="konkhmer-sleokchher-regular">DISPONIBLE SUR <br><span class="yellow">MOBILE</span></h1>
+                <p class="kulim-park-regular">Inventor race est maintenant disponible <br>
+                    sur votre mobile</p>
+            </div>
+    
+            <div class="text2">
+                <div class="pt1">
+                    <p class="konkhmer-sleokchher-regular">Qui a <span class="bleu-f">inventé</span> quoi</p>
+                    <img src="asset/img/interrogation.png" alt="">
+                </div>
+                <div class="pt2">
+                    <p class="konkhmer-sleokchher-regular">À vous de <span class="bleu-f">jouer</span></p>
+                    <img src="asset/img/exclamation.png" alt="">
+                </div>
+            </div>
+    
+            <div class="download-buttons">
+                <a href="#" class="store-button">
+                    <img src="asset/img/appstore.png" alt="Télécharger sur App Store">
+                </a>
+                <a href="#" class="store-button">
+                    <img src="asset/img/googleplay.png" alt="Télécharger sur Google Play">
+                </a>
+                <a href="#" class="store-button">
+                    <img src="asset/img/enligne.png" alt="Version en ligne">
+                </a>
+            </div>
+        </div>
+
+        <div class="droite">
+            <video id="mVideo" autoplay muted playsinline>
+                <source src="asset/video/smartphone_REENC2.webm" type="video/webm">
+                Votre navigateur ne supporte pas les vidéos WebM avec transparence.
+            </video>
+            
+
+        </div>
+
+    </div>
+<!--
+    <div class="inventeur">
+
+        <div class="rou2">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+
+        <div class="partie">
+            <section class="partie1">
+                <div class="img-inventeur">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+        
+                <div class="guillemets">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+        
+                <p class="textp">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illum at quae, corrupti natus omnis magni in quisquam nam, sequi, provident beatae aliquam corporis vel rem reiciendis quaerat dolores asperiores?
+                </p>
+        
+                <img src="" alt="" class="inventeur-casque">
+            </section>
+            <section class="partie1">
+                <div class="img-inventeur">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+        
+                <div class="guillemets">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+        
+                <p class="textp">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illum at quae, corrupti natus omnis magni in quisquam nam, sequi, provident beatae aliquam corporis vel rem reiciendis quaerat dolores asperiores?
+                </p>
+        
+                <img src="" alt="" class="inventeur-casque">
+            </section>
+            <section class="partie1">
+                <div class="img-inventeur">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+        
+                <div class="guillemets">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+        
+                <p class="textp">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illum at quae, corrupti natus omnis magni in quisquam nam, sequi, provident beatae aliquam corporis vel rem reiciendis quaerat dolores asperiores?
+                </p>
+        
+                <img src="" alt="" class="inventeur-casque">
+            </section>
+        </div>
+
+    </div>
+-->
+    <div class="regles">
+        <h1 class="konkhmer-sleokchher-regular"><span class="yellow">R</span>&Egrave;GLES</h1>
+        <img class="versus" src="asset/img/versus.png" alt="">
+        
+        
+        <div class="conteneur">
+        
+            <div class="messages">
+                <div class="message bouge">
+                    <p id="bulle1" class="kulim-park-regular">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Id in magni ipsam <br>dolorum eligendi odio officia vitae. <br> Impedit corrupti reiciendis voluptate <br> recusandae quas magni itaque quis vitae <br> voluptatum amet? Saepe.</p>
+                    <img src="asset/img/message 5.png" alt="" width="40%">
+                </div>
+
+                <div class="message2 bouge">
+                    <p id="bulle2" class="kulim-park-regular">Lorem ipsum, dolor sit amet consectetur.<br> Et asperiores vel cumque voluptatibus perspiciatis<br> quibusdam  tempora temporibus, quia libero illum <br>pariatur,  commodi cupiditate itaque omnis .</p>
+                    <img src="asset/img/message 2.png" alt="" width="50%">
+                </div>
+
+                <div class="message3 bouge">
+                    <p id="bulle3" class="kulim-park-regular">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Ut, <br>tempore sunt voluptatum eligendi.</p>
+                    <img src="asset/img/message 3.png" alt="" width="35%">
+                </div>
+
+            </div>
+            
+            <div class="img">
+                <img src="asset/img/Gears.png" alt="" >
+            </div>
+
+        </div>
+
+
+        
+    </div>
+    
+    <div class="formulaire">
+        <h1 class="konkhmer-sleokchher-regular"><span class="black">F</span>ORMULAIRE</h1>
+        <div class="feedback-form">
+            <h2 class="konkhmer-sleokchher-regular">Laissez-nous votre avis</h2>
+
+            <form action="./feedback.php" method="POST" enctype="multipart/form-data">
+                <label class="konkhmer-sleokchher-regular" for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label class="konkhmer-sleokchher-regular" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label class="konkhmer-sleokchher-regular" for="rating">Note du jeu</label>
+                <select id="rating" name="rating">
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️ (Excellent)</option>
+                    <option value="4">⭐️⭐️⭐️⭐️ (Très bien)</option>
+                    <option value="3">⭐️⭐️⭐️ (Bien)</option>
+                    <option value="2">⭐️⭐️ (Moyen)</option>
+                    <option value="1">⭐️ (Mauvais)</option>
+                </select>
+        
+                <label class="konkhmer-sleokchher-regular" for="comment">Commentaire</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        
+                <label class="konkhmer-sleokchher-regular" for="screenshot">Capture d'écran (optionnel)</label>
+                <input type="file" id="screenshot" name="screenshot" accept="image/*">
+        
+                <button class="konkhmer-sleokchher-regular" type="submit">Envoyer</button>
+            </form>
+
+            <form action="test.php" method="POST">
+                <button type="submit">Tester POST</button>
+            </form>
+        </div>
+        
+        <footer>
+            <p class="kulim-park-regular">42 rue des Mésanges <br>
+                94230 Cachan</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+    
+        </footer>
+    </div>
+    
+    
+    <script src="asset/js/boutonup.js"></script>
+    <script src="asset/js/carrousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        
+        const video = document.getElementById("mVideo");
+
+        video.addEventListener("ended", () => {
+            setTimeout(() => {
+                video.play();
+            }, 1000);
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.querySelectorAll('.bouge').forEach((element, index) => {
+            gsap.from(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    once: true
+                },
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                delay: index * 0.3,  // Décalage entre chaque message
+                ease: "elastic.out(1, 0.3)"
+            });
+        });
+    </script>
+</body>
+</html>
