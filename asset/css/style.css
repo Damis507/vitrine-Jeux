@@ -1,23 +1,23 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #F7F7F7;
     overflow-x: hidden;
 }
 
-.bleu{
-    color: #2ED7FF ;
+.bleu {
+    color: #2ED7FF;
 }
 
-.bleu-f{
-    color: #1a778c ;
+.bleu-f {
+    color: #1a778c;
 }
 
-.yellow{
+.yellow {
     color: #FFC61D;
 }
 
-.black{
+.black {
     color: #212121;
 }
 
@@ -33,17 +33,17 @@ body{
     font-style: normal;
 }
 
-nav{
+nav {
     position: sticky;
     top: 0;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    z-index: 1;
+    z-index: 100000000000;
 }
 
-nav, img{
+nav img {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -79,8 +79,7 @@ nav, img{
     background-color: #147d91;
 }
 
-.jeu{
-    position: absolute;
+.jeu {
     display: flex;
     align-items: center;
     right: 0;
@@ -95,7 +94,7 @@ nav, img{
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 3px; 
+    height: 3px;
     background-color: #1f90a9;
     transition: width 0.3s ease-in-out;
 }
@@ -104,9 +103,9 @@ nav, img{
     width: 100%;
 }
 
-.jeu p{
+.jeu p {
     margin-right: 5px;
-    
+
 }
 
 .slider-container {
@@ -119,7 +118,7 @@ nav, img{
     z-index: 2;
 }
 
-.slider {
+ .slider {
     display: flex;
     width: 100%;
     height: 100%;
@@ -136,24 +135,24 @@ nav, img{
     min-width: 100%;
 }
 
-.decor1{
+.decor1 {
     position: absolute;
     left: 0;
     margin-left: -10rem;
 }
 
-.decor2{
+.decor2 {
     position: absolute;
     margin-left: 80rem;
     margin-top: -30rem;
 }
 
-.cont2 p{
+.cont2 p {
     font: 34px;
     margin: 0%;
 }
 
-.cont2 img{
+.cont2 img {
     position: relative;
     margin-right: 5rem;
     display: flex;
@@ -162,16 +161,26 @@ nav, img{
 }
 
 
-.slide:nth-child(1) { background-image: linear-gradient(to right top, #b19d61, #a8934e, #9e883b, #947e26, #8a740b);}
-.slide:nth-child(2) { background-image: linear-gradient(to right top, #4ecdc4, #29b4bc, #009bb0, #0082a1, #006a8f); }
+.slide:nth-child(1) {
+    background-image: linear-gradient(to right top, #b19d61, #a8934e, #9e883b, #947e26, #8a740b);
+}
+
+.slide:nth-child(2) {
+    background-image: linear-gradient(to right top, #4ecdc4, #29b4bc, #009bb0, #0082a1, #006a8f);
+}
 
 @keyframes slideshow {
-    0%, 45% {
+
+    0%,
+    45% {
         transform: translateX(0);
     }
-    50%, 95% {
+
+    50%,
+    95% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -204,35 +213,35 @@ nav, img{
     transform: scale(1.2);
 }
 
-/* Classe pour arrêter l'animation quand on utilise les boutons */
 .slider.paused {
     animation-play-state: paused;
 }
 
-.cont1{
+.cont1 {
     display: flex;
     align-items: center;
     flex-direction: column;
     z-index: 1;
 }
 
-.cont1 p{
+.cont1 p {
     color: white;
     font-size: larger;
 
 }
 
-.gameScreen{
-    margin-right: 2rem;
-    max-width: 800px;
+.gameScreen {
+    align-items: center;
+    width: 50%;
+    height: auto;
     z-index: 1;
 }
 
-.cont1 img{
+.cont1 img {
     margin: 4rem;
 }
 
-.section2{
+.section2 {
     position: sticky;
     display: flex;
     width: 100%;
@@ -240,24 +249,24 @@ nav, img{
     box-shadow: 0 -10px 20px rgba(73, 139, 152, 0.5);
     top: 0;
     z-index: 3;
-    
+
 }
 
-.gearback2{
+.gearback2 {
     position: absolute;
     left: 0;
     top: -5px;
     z-index: 1;
 }
 
-.gauche{
+.gauche {
     position: relative;
     margin-left: 22px;
     margin-top: -2rem;
     z-index: 3;
 }
 
-.droite{
+.droite {
     position: absolute;
     min-width: 50px;
     margin-left: 30rem;
@@ -270,38 +279,38 @@ video {
     margin-top: 5rem;
 }
 
-.text1 h1{
+.text1 h1 {
     font-size: 90PX;
     line-height: 1.2;
 }
 
-.text1 p{
+.text1 p {
     color: #525252;
     font-size: 26px;
     margin-top: -4rem;
 
 }
 
-.text2{
+.text2 {
     font-size: 32px;
     display: flex;
     flex-direction: column;
     margin-left: 12rem;
 }
 
-.pt1{
+.pt1 {
     display: flex;
     align-items: end;
 }
 
-.pt2{
+.pt2 {
     display: flex;
     align-items: end;
     margin-left: 5rem;
     margin-top: -5rem;
 }
 
-.download-buttons{
+.download-buttons {
     margin-top: 4rem;
     padding-bottom: 5rem;
     display: flex;
@@ -332,7 +341,7 @@ video {
     transform: translateY(1px) scale(0.98);
 }
 
-.regles{
+.regles {
     position: sticky;
     width: 100%;
     height: 100vh;
@@ -343,33 +352,32 @@ video {
     z-index: 4;
 }
 
-.regles h1{
+.regles h1 {
     font-size: 90px;
     letter-spacing: 4px;
     margin-left: 22px;
     color: #F7F7F7;
 }
 
-.versus{
+.versus {
     position: absolute;
     right: 0;
     top: 0;
     max-width: 400px;
 }
 
-.conteneur{
-    margin-top: -6rem;
+.conteneur {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    margin-left: 6rem;
+    justify-content: center;
+    margin-left: 1rem;
 }
 
-.img img{
+.img img {
     width: 300px;
 }
 
-.messages{
+.messages {
     margin-bottom: 3rem;
 }
 
@@ -378,7 +386,7 @@ video {
     width: fit-content;
 }
 
-.message2{
+.message2 {
     position: relative;
     width: fit-content;
     margin-bottom: 1rem;
@@ -386,17 +394,11 @@ video {
 
 }
 
-.message3{
+.message3 {
     position: relative;
     width: fit-content;
-    
-}
 
-/*.messages img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}*/
+}
 
 #bulle1 {
     position: absolute;
@@ -404,7 +406,7 @@ video {
     margin-left: 3rem;
     padding: 20px;
     z-index: 1;
-    color: #000; 
+    color: #000;
 }
 
 #bulle2 {
@@ -414,7 +416,7 @@ video {
     margin-left: 6rem;
     padding: 20px;
     z-index: 1;
-    color: #000; 
+    color: #000;
 }
 
 #bulle3 {
@@ -424,19 +426,19 @@ video {
     margin-top: -0.5rem;
     padding: 20px;
     z-index: 1;
-    color: #000; 
+    color: #000;
 }
 
 
-#message2{
+#message2 {
     margin-left: 2rem;
 }
 
-#message3{
+#message3 {
     margin-left: 20rem;
 }
 
-.formulaire{
+.formulaire {
     position: sticky;
     width: 100%;
     height: 100%;
@@ -446,7 +448,7 @@ video {
     z-index: 4;
 }
 
-.formulaire h1{
+.formulaire h1 {
     font-size: 90px;
     letter-spacing: 4px;
     margin: 0;
@@ -462,7 +464,7 @@ video {
     width: 50%;
     margin: 40px auto;
     box-shadow: 0 4px 6px #0000001a;
-    display: flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -506,7 +508,7 @@ video {
 }
 
 
-footer{
+footer {
     position: sticky;
     width: 100%;
     background: #e1e1e1;
@@ -516,14 +518,15 @@ footer{
     flex-direction: column-reverse;
 }
 
-footer p{
+footer p {
     align-items: center;
     text-align: center;
 }
 
 .social-links {
     display: flex;
-    gap: 15px; /* Espacement entre les icônes */
+    gap: 15px;
+    /* Espacement entre les icônes */
     justify-content: center;
     margin-top: 20px;
 }
@@ -546,3 +549,6 @@ footer p{
     background: #555;
     transform: scale(1.1);
 }
+
+/*******************************************************************************************************************************/
+
